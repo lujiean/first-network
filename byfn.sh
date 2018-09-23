@@ -412,19 +412,19 @@ function generateChannelArtifacts() {
     exit 1
   fi
 
-  echo
-  echo "#################################################################"
-  echo "#######    Generating anchor peer update for Org2MSP   ##########"
-  echo "#################################################################"
-  set -x
-  configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate \
-    ./channel-artifacts/Org2MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org2MSP
-  res=$?
-  set +x
-  if [ $res -ne 0 ]; then
-    echo "Failed to generate anchor peer update for Org2MSP..."
-    exit 1
-  fi
+  # echo
+  # echo "#################################################################"
+  # echo "#######    Generating anchor peer update for Org2MSP   ##########"
+  # echo "#################################################################"
+  # set -x
+  # configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate \
+  #   ./channel-artifacts/Org2MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org2MSP
+  # res=$?
+  # set +x
+  # if [ $res -ne 0 ]; then
+  #   echo "Failed to generate anchor peer update for Org2MSP..."
+  #   exit 1
+  # fi
   echo
 }
 
