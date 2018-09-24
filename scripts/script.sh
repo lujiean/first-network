@@ -105,8 +105,8 @@ chaincodeInvoke 0 1
 # installChaincode 1 2
 
 # Query on chaincode on peer1.org2, check if the result is 90
-# echo "Querying chaincode on peer1.org2..."
-# chaincodeQuery 1 2 90
+echo "Querying chaincode on peer1.org2..."
+chaincodeQuery 0 1 90
 
 echo
 echo "========= All GOOD, BYFN execution completed =========== "
