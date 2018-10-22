@@ -91,8 +91,8 @@ installChaincode 0 1 --manual install
 # Instantiate chaincode on peer0.org2
 # echo "Instantiating chaincode on peer0.org2..."
 echo "Instantiating chaincode on peer0.org1..."
-instantiateChaincode 0 2
-# instantiateChaincode 0 1 --manual instantiating
+# instantiateChaincode 0 2
+instantiateChaincode 0 1 --manual instantiating
 
 # Query chaincode on peer0.org1
 echo "Querying chaincode on peer0.org1..."
