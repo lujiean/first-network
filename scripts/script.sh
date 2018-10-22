@@ -84,14 +84,14 @@ updateAnchorPeers 0 1
 
 ## Install chaincode on peer0.org1 and peer0.org2
 echo "Installing chaincode on peer0.org1..."
-# installChaincode 0 1 --manual install
+installChaincode 0 1 --manual install
 # echo "Install chaincode on peer0.org2..."
 # installChaincode 0 2
 
 # Instantiate chaincode on peer0.org2
 # echo "Instantiating chaincode on peer0.org2..."
 echo "Instantiating chaincode on peer0.org1..."
-# instantiateChaincode 0 2
+instantiateChaincode 0 2
 # instantiateChaincode 0 1 --manual instantiating
 
 # Query chaincode on peer0.org1
